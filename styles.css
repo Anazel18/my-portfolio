@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    padding: 50px;
+    color: #35424a;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    text-decoration: underline; /* マウスオーバー時に下線を表示 */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #35424a;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* 具体的にセクション内の画像を指定する場合 */
+#about img {
+    margin-right: 50px; /* 画像とテキストの間にスペースを追加 */
+    border-radius: 280px / 200px; /* 自己紹介セクションの画像は20px丸くする */
+}
+
+.about-container {
+    display: flex; /* フレックスボックスを使用 */
+    align-items: flex-start; /* アイテムを上揃え */
+    margin-top: 20px; /* セクションの上部にスペースを追加 */
+}
+
+.about-container p {
+    font-size: 1.2rem; /* タイトルのフォントサイズ */
+    margin: 0; /* 各段落のマージンをリセット */
+    line-height: 1.5; /* 行間を調整 */
+    max-width: 600px; /* テキストの最大幅を設定 */
+}
+
+.contact {
+    font-size: 1.2rem; /* タイトルのフォントサイズ */
+    margin: 20px; /* 各段落のマージンをリセット */
+    line-height: 1.5; /* 行間を調整 */
+    max-width: 600px; /* テキストの最大幅を設定 */
+}
+
+/* プロジェクトセクションの画像を独自に指定する場合 */
+#projects img {
+    border-radius: 15px; /* プロジェクトの画像は15px丸くする */
+}
+
+.portfolio {
+    position: relative; /* 画像の上にテキストを配置 */
+    text-align: center; /* テキストを中央揃え */
+    margin-bottom: 20px; /* セクション間のスペース */
+}
+
+.portfolio img {
+    width: 100%; /* 画像を親要素の幅に合わせる */
+    height: auto; /* 高さは自動で調整 */
+    border-radius: 0px; /* 画像の角を丸くする */
+}
+
+.overlay {
+    position: absolute; /* 画像の上に重ねる */
+    top: 50%; /* 縦方向中央 */
+    left: 50%; /* 横方向中央 */
+    transform: translate(-50%, -45%); /* 中心をずらして完全に中央に配置 */
+    color: white; /* テキストの色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストに影をつける */
+}
+
+h1 {
+    font-size: 3.5rem; /* タイトルのフォントサイズ */
+    margin: 0; /* マージンをリセット */
+}
+
+h2 {
+    font-size: 2rem; /* サブタイトルのフォントサイズ */
+    margin: 0; /* マージンをリセット */
+}
